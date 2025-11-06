@@ -1,0 +1,8 @@
+net.tapi.handynotes-pngs-0 /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/build/generated/res/pngs/debug
+net.tapi.handynotes-resValues-1 /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/build/generated/res/resValues/debug
+net.tapi.handynotes-rs-2 /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/build/generated/res/rs/debug
+net.tapi.handynotes-mergeDebugResources-3 /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+net.tapi.handynotes-mergeDebugResources-4 /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+net.tapi.handynotes-merged_res-5 /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/build/intermediates/merged_res/debug
+net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6 /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/res
+net.tapi.handynotes-debug-7 /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/src/debug/res

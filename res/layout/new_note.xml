@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/obsidian_background">
+
+    	<Button
+	    	android:text="@string/add"
+	        android:id="@+id/add_button"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_alignParentBottom="true"
+	        android:background="@drawable/obsidian_button_background"
+	        android:textColor="@color/obsidian_text"
+	        android:textSize="16sp"
+	        android:padding="16dp">
+	    </Button>
+
+    	<EditText
+			android:id="@+id/newNoteText"
+		    android:layout_height="fill_parent"
+		    android:layout_width="fill_parent"
+		    android:layout_above="@id/add_button"
+		    android:gravity="top"
+		    android:background="@color/obsidian_background"
+		    android:textColor="@color/obsidian_text"
+		    android:textSize="16sp"
+		    android:padding="16dp">
+		</EditText>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="obsidian_accent">#7c6fef</color>
+    <color name="obsidian_accent_hover">#8e7fff</color>
+    <color name="obsidian_background">#1e1e2e</color>
+    <color name="obsidian_background_darker">#16161e</color>
+    <color name="obsidian_border">#2d2d3f</color>
+    <color name="obsidian_text">#dcddde</color>
+    <color name="obsidian_text_secondary">#9ca0a4</color>
+    <string name="add">Add</string>
+    <string name="app_name">Markdown Notes Widget</string>
+    <string name="update">Update</string>
+</resources>

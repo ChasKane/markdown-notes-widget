@@ -1,0 +1,85 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/values-es_values-es.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/res/values-es/strings.xml",
+                    "from": {
+                        "startLines": "4,3,6,8,7,9,10,11,12,5",
+                        "startColumns": "0,4,0,0,0,0,0,0,0,0",
+                        "startOffsets": "104,60,181,299,240,358,417,476,535,139",
+                        "endColumns": "34,47,58,58,58,58,58,58,58,41",
+                        "endOffsets": "138,103,239,357,298,416,475,534,593,180"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,94,142,205,268,331,394,457,520,583",
+                        "endColumns": "38,47,62,62,62,62,62,62,62,45",
+                        "endOffsets": "89,137,200,263,326,389,452,515,578,624"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "net.tapi.handynotes-merged_res-5:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/res/values/strings.xml",
+                    "from": {
+                        "startLines": "-1,3,-1",
+                        "startColumns": "-1,4,-1",
+                        "startOffsets": "-1,60,-1",
+                        "endColumns": "-1,58,-1",
+                        "endOffsets": "-1,114,-1"
+                    },
+                    "to": {
+                        "startLines": "9,10,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "432,468,527",
+                        "endColumns": "35,58,41",
+                        "endOffsets": "463,522,564"
+                    }
+                },
+                {
+                    "source": "/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/res/values/colors.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,105,161,215,276,326,374",
+                        "endColumns": "49,55,53,60,49,47,57",
+                        "endOffsets": "100,156,210,271,321,369,427"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,3,6,8,7,9,10,11,12,5",
+                        "startColumns": "0,4,0,0,0,0,0,0,0,0",
+                        "startOffsets": "104,60,174,284,229,339,394,449,504,136",
+                        "endColumns": "31,47,54,54,54,54,54,54,54,37",
+                        "endOffsets": "135,103,228,338,283,393,448,503,558,173"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,91,139,198,257,316,375,434,493,552",
+                        "endColumns": "35,47,58,58,58,58,58,58,58,41",
+                        "endOffsets": "86,134,193,252,311,370,429,488,547,589"
+                    }
+                }
+            ]
+        }
+    ]
+}

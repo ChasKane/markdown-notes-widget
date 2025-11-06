@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="net.tapi.handynotes"
+      android:versionCode="7"
+      android:versionName="1.6">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+		<receiver
+			android:name=".HandyNotes22"
+			android:label="@string/app_name"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/widget_22" />
+		</receiver>
+
+		<activity android:name=".NewNote"
+		          android:windowSoftInputMode="stateAlwaysVisible|adjustResize"
+		          android:exported="true">
+		    <intent-filter>
+		        <action android:name="android.intent.action.MAIN" />
+		        <category android:name="android.intent.category.LAUNCHER" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+		    </intent-filter>
+		</activity>
+		<activity android:name=".EditNote"
+		          android:windowSoftInputMode="stateAlwaysVisible|adjustResize"
+		          android:exported="false"></activity>
+		<service android:name=".NoteViewsService"
+		         android:permission="android.permission.BIND_REMOTEVIEWS"
+		         android:exported="false"></service>
+		<receiver android:name=".HandyNotes"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+		</receiver>
+    </application>
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19" />
+    <supports-screens android:xlargeScreens="true" />
+
+</manifest> 

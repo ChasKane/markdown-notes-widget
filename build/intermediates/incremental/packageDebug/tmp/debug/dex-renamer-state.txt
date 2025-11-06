@@ -1,0 +1,4 @@
+#Thu Nov 06 10:56:39 PET 2025
+base.0=/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

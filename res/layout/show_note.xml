@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/showNote"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="0dp"
+    android:clipToPadding="false">
+    
+	<!-- Shadows removed to maximize screen real estate -->
+	<!-- ListView now fills entire widget area -->
+	<ListView
+		android:id="@+id/showNoteList"
+	   	android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@color/obsidian_background"
+		android:divider="#00000000"
+		android:dividerHeight="0dp"
+		android:padding="0dp"
+		android:clipToPadding="false"
+		android:scrollbars="none"></ListView>
+		 
+	 
+</RelativeLayout>
