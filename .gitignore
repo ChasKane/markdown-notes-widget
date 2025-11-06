@@ -1,6 +1,57 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+.gradle/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
 .classpath
 .project
-bin/*
-default.properties
-gen/*
-HandyNotes.apk
+.settings/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Android Studio
+*.log
+.gradle
+local.properties
+.idea/
+*.iml
+*.hprof
+.cxx/
+.externalNativeBuild
+.captures/
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.swp
+*.swo
+*~
+*.bak
