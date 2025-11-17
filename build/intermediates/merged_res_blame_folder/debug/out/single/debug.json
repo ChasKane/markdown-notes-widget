@@ -1,86 +1,146 @@
 [
     {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable-hdpi_settings_icon.png.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-pngs-0:/drawable-hdpi/settings_icon.png"
+    },
+    {
         "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_shadow_bl.png.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/drawable/shadow_bl.png"
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/shadow_bl.png"
     },
     {
         "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/layout_note_list_item.xml.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/layout/note_list_item.xml"
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/layout/note_list_item.xml"
     },
     {
-        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_obsidian_button_background.xml.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/drawable/obsidian_button_background.xml"
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable-xhdpi_settings_icon.png.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-pngs-0:/drawable-xhdpi/settings_icon.png"
     },
     {
-        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/xml_widget_22.xml.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/xml/widget_22.xml"
-    },
-    {
-        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_shadow_br.png.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/drawable/shadow_br.png"
-    },
-    {
-        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/layout_edit_note.xml.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/layout/edit_note.xml"
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable-ldpi_settings_icon.png.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-pngs-0:/drawable-ldpi/settings_icon.png"
     },
     {
         "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_icon.png.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/drawable/icon.png"
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/icon.png"
     },
     {
         "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_shadow_r.png.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/drawable/shadow_r.png"
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/shadow_r.png"
     },
     {
         "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_shadow_t.png.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/drawable/shadow_t.png"
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/shadow_t.png"
     },
     {
-        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/layout_show_note.xml.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/layout/show_note.xml"
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_widget_bg_5.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/widget_bg_5.xml"
     },
     {
-        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/xml_widget_11.xml.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/xml/widget_11.xml"
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/layout_note_list_item_filler.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/layout/note_list_item_filler.xml"
     },
     {
         "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_shadow_l.png.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/drawable/shadow_l.png"
-    },
-    {
-        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_shadow_b.png.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/drawable/shadow_b.png"
-    },
-    {
-        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_shadow_tl.png.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/drawable/shadow_tl.png"
-    },
-    {
-        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/xml_widget_42.xml.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/xml/widget_42.xml"
-    },
-    {
-        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/xml_widget_44.xml.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/xml/widget_44.xml"
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/shadow_l.png"
     },
     {
         "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_shadow_tr.png.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/drawable/shadow_tr.png"
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/shadow_tr.png"
     },
     {
-        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/xml_widget_41.xml.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/xml/widget_41.xml"
+        "merged": "net.tapi.handynotes-merged_res-5:/layout_note_list_item_filler.xml.flat",
+        "source": "net.tapi.handynotes-markdown-widget-6:/layout/note_list_item_filler.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_widget_bg_3.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/widget_bg_3.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_widget_bg_8.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/widget_bg_8.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_widget_bg_1.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/widget_bg_1.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_color_bg.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/color_bg.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_obsidian_button_background.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/obsidian_button_background.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/xml_widget_22.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/xml/widget_22.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_transparent.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/transparent.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_shadow_br.png.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/shadow_br.png"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/layout_edit_note.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/layout/edit_note.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_widget_bg_6.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/widget_bg_6.xml"
+    },
+    {
+        "merged": "net.tapi.handynotes-merged_res-5:/layout_show_note.xml.flat",
+        "source": "net.tapi.handynotes-markdown-widget-6:/layout/show_note.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable-anydpi-v21_settings_icon.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-pngs-0:/drawable-anydpi-v21/settings_icon.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/layout_show_note.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/layout/show_note.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/xml_preferences.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_shadow_b.png.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/shadow_b.png"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable-xxhdpi_settings_icon.png.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-pngs-0:/drawable-xxhdpi/settings_icon.png"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_shadow_tl.png.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/shadow_tl.png"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_widget_bg_4.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/widget_bg_4.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable-xxxhdpi_settings_icon.png.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-pngs-0:/drawable-xxxhdpi/settings_icon.png"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_widget_bg_7.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/widget_bg_7.xml"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable-mdpi_settings_icon.png.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-pngs-0:/drawable-mdpi/settings_icon.png"
+    },
+    {
+        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/drawable_widget_bg_2.xml.flat",
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/drawable/widget_bg_2.xml"
     },
     {
         "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/layout_new_note.xml.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/layout/new_note.xml"
-    },
-    {
-        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/xml_widget_21.xml.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/xml/widget_21.xml"
-    },
-    {
-        "merged": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-merged_res-5:/xml_widget_33.xml.flat",
-        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-net.tapi.handynotes_7_src.tar-1.gz-6:/xml/widget_33.xml"
+        "source": "/Users/youngsage/.gradle/daemon/7.6.1/net.tapi.handynotes-markdown-widget-6:/layout/new_note.xml"
     }
 ]

@@ -35,31 +35,15 @@ public class NewNote extends Activity {
             widgetId = AppWidgetManager.INVALID_APPWIDGET_ID;
         }
         
-        // If no widget ID (launched from app drawer), show info message
+        // If no widget ID (launched from app drawer), just finish
         if (widgetId == null || widgetId == AppWidgetManager.INVALID_APPWIDGET_ID) {
-            Toast.makeText(this, "Please add widget from home screen widget picker", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Add widget from home screen widget picker", Toast.LENGTH_LONG).show();
             finish();
             return;
         }
         
-		setContentView(R.layout.new_note);
-
-        statusText = (EditText) findViewById(R.id.newNoteText);
-        if (statusText != null) {
-            statusText.setFocusable(false);
-            statusText.setClickable(false);
-            statusText.setText("Click 'Select Markdown File' to choose a markdown or text file (Obsidian vaults, cloud sync folders, local files)");
-        }
-        
-        selectFileButton = (Button) findViewById(R.id.add_button);
-        if (selectFileButton != null) {
-            selectFileButton.setText("Select Markdown File");
-            selectFileButton.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    pickMarkdownFile();
-                }
-            });
-        }
+        // Go directly to file picker for widget configuration
+        pickMarkdownFile();
 	}
 	
 	@Override
@@ -77,24 +61,32 @@ public class NewNote extends Activity {
 						Intent.FLAG_GRANT_READ_URI_PERMISSION | 
 						Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
 					
-					// Update UI to show selected file
-					if (statusText != null) {
-						String fileName = getFileName(uri);
-						statusText.setText("Selected: " + fileName + "\n\nClick 'Add Widget' to finish");
-					}
+					// Save file URI first
+					saveNote();
 					
-					// Change button to add widget
-					if (selectFileButton != null) {
-						selectFileButton.setText("Add Widget");
-						selectFileButton.setOnClickListener(new View.OnClickListener() {
-							public void onClick(View v) {
-								saveNote();
-								addWidget();
-							}
-						});
-					}
+					// Then show options screen
+					Intent optionsIntent = new Intent(this, WidgetOptionsActivity.class);
+					optionsIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, widgetId);
+					startActivityForResult(optionsIntent, 2);
 				}
+			} else {
+				// User cancelled file selection
+				setResult(RESULT_CANCELED);
+				finish();
 			}
+		} else if (requestCode == 2 && resultCode == RESULT_OK) {
+			// Options screen completed, initialize widget properly
+			initializeWidget();
+			
+			// Finish widget configuration
+			Intent resultValue = new Intent();
+			resultValue.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, widgetId);
+			setResult(RESULT_OK, resultValue);
+			finish();
+		} else if (requestCode == REQUEST_CODE_PICK_FILE) {
+			// User cancelled file selection
+			setResult(RESULT_CANCELED);
+			finish();
 		}
 	}
 	
@@ -106,6 +98,9 @@ public class NewNote extends Activity {
 		// Filter for markdown files
 		String[] mimeTypes = {"text/markdown", "text/plain", "application/octet-stream"};
 		intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);
+		
+		// Single file selection - no checkmarks, just tap to select
+		intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, false);
 		
 		// Request persistable URI permissions
 		intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
@@ -159,19 +154,11 @@ public class NewNote extends Activity {
         db.close();
 	}
 	
-	private void addWidget() {
-		if (selectedFileUri == null) {
-			Toast.makeText(this, "Please select a file first", Toast.LENGTH_SHORT).show();
-			return;
-		}
-		
+	private void initializeWidget() {
 		if (widgetId == null || widgetId == AppWidgetManager.INVALID_APPWIDGET_ID) {
 			Toast.makeText(this, "Invalid widget ID", Toast.LENGTH_SHORT).show();
 			return;
 		}
-		
-		// Save the note first
-		saveNote();
 		
 		Context context = getBaseContext();
 		NotesDbAdapter db = new NotesDbAdapter(context);
@@ -179,16 +166,55 @@ public class NewNote extends Activity {
 		
 		String fileUriString = db.getFileUri(widgetId);
 		if (fileUriString == null || fileUriString.isEmpty()) {
-			Toast.makeText(this, "Failed to save file URI", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "Widget file URI not found", Toast.LENGTH_SHORT).show();
 			db.close();
 			return;
 		}
 		
+		// Get per-widget settings
+		boolean showTitle = db.getShowTitle(widgetId);
+		String bgColor = db.getBgColor(widgetId);
+		String paddingColor = db.getPaddingColor(widgetId);
+		
 		db.close();
 		
-		AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
+		try {
 		
+		AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
 		RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.show_note);
+		
+		// Set background color using ImageView color filter
+		try {
+			int bgColorInt = android.graphics.Color.parseColor(bgColor);
+			views.setInt(R.id.widgetBgOverlay, "setColorFilter", bgColorInt);
+			views.setInt(R.id.widgetBgOverlay, "setImageResource", R.drawable.transparent);
+			android.util.Log.d("NewNote", "Setting background color: " + bgColor + " = " + bgColorInt);
+		} catch (Exception e) {
+			android.util.Log.e("NewNote", "Error setting background color: " + e.getMessage());
+		}
+		
+		// Set padding color (for the ListView background) using ImageView color filter
+		try {
+			int paddingColorInt = android.graphics.Color.parseColor(paddingColor);
+			views.setInt(R.id.widgetPaddingOverlay, "setColorFilter", paddingColorInt);
+			views.setInt(R.id.widgetPaddingOverlay, "setImageResource", R.drawable.transparent);
+			android.util.Log.d("NewNote", "Setting padding color: " + paddingColor + " = " + paddingColorInt);
+		} catch (Exception e) {
+			android.util.Log.e("NewNote", "Error setting padding color: " + e.getMessage());
+		}
+		
+		// Set up title if enabled
+		if (showTitle) {
+			String fileName = getFileName(android.net.Uri.parse(fileUriString));
+			if (fileName != null && !fileName.isEmpty()) {
+				views.setTextViewText(R.id.widgetTitle, fileName);
+				views.setViewVisibility(R.id.widgetTitle, android.view.View.VISIBLE);
+			} else {
+				views.setViewVisibility(R.id.widgetTitle, android.view.View.GONE);
+			}
+		} else {
+			views.setViewVisibility(R.id.widgetTitle, android.view.View.GONE);
+		}
 
 		// Set up the RemoteViewsService intent to bind to the ListView
 		Intent serviceIntent = new Intent(context, NoteViewsService.class);
@@ -209,14 +235,29 @@ public class NewNote extends Activity {
 		PendingIntent pendingIntent = PendingIntent.getActivity(context, widgetId, editIntent, flags);
 		views.setPendingIntentTemplate(R.id.showNoteList, pendingIntent);
 		
-		// Also set click intent for the whole widget container
+		// Set click intent for the whole widget container (handles empty space clicks)
 		views.setOnClickPendingIntent(R.id.showNote, pendingIntent);
+		
+		// Set click intent on title if visible
+		views.setOnClickPendingIntent(R.id.widgetTitle, pendingIntent);
 
 		appWidgetManager.updateAppWidget(widgetId, views);
-		
-		Intent resultValue = new Intent();
-		resultValue.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, widgetId);
-		setResult(RESULT_OK, resultValue);
-		finish();
+		} catch (Exception e) {
+			android.util.Log.e("NewNote", "Error initializing widget: " + e.getMessage(), e);
+			Toast.makeText(this, "Error initializing widget: " + e.getMessage(), Toast.LENGTH_LONG).show();
+		}
+	}
+	
+	private int getDrawableIdForColor(String color) {
+		// Map color strings to drawable resource IDs
+		if ("#1e1e2e".equals(color)) return R.drawable.widget_bg_1;
+		if ("#16161e".equals(color)) return R.drawable.widget_bg_2;
+		if ("#2d2d3f".equals(color)) return R.drawable.widget_bg_3;
+		if ("#000000".equals(color)) return R.drawable.widget_bg_4;
+		if ("#ffffff".equals(color)) return R.drawable.widget_bg_5;
+		if ("#1a1a2e".equals(color)) return R.drawable.widget_bg_6;
+		if ("#16213e".equals(color)) return R.drawable.widget_bg_7;
+		if ("#0f3460".equals(color)) return R.drawable.widget_bg_8;
+		return 0; // No matching drawable
 	}
 }

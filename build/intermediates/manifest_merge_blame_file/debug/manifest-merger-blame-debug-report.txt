@@ -5,102 +5,112 @@
 5    android:versionName="1.6" >
 6
 7    <uses-sdk
-7-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:42:5-74
+7-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:46:5-74
 8        android:minSdkVersion="19"
-8-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:42:15-41
+8-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:46:15-41
 9        android:targetSdkVersion="33" />
-9-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:42:42-71
+9-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:46:42-71
 10
 11    <supports-screens android:xlargeScreens="true" />
-11-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:43:5-54
-11-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:43:23-51
+11-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:47:5-54
+11-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:47:23-51
 12
 13    <application
-13-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:6:5-41:19
+13-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:6:5-45:19
 14        android:debuggable="true"
 15        android:icon="@drawable/icon"
-15-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:6:18-47
+15-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:6:18-47
 16        android:label="@string/app_name" >
-16-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:6:48-80
+16-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:6:48-80
 17        <receiver
-17-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:7:3-16:14
+17-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:7:3-16:14
 18            android:name="net.tapi.handynotes.HandyNotes22"
-18-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:8:4-32
+18-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:8:4-32
 19            android:exported="true"
-19-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:10:4-27
+19-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:10:4-27
 20            android:label="@string/app_name" >
-20-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:9:4-36
+20-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:9:4-36
 21            <intent-filter>
-21-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:11:4-13:20
+21-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:11:4-13:20
 22                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-22-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:12:5-72
-22-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:12:13-69
+22-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:12:5-72
+22-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:12:13-69
 23            </intent-filter>
 24
 25            <meta-data
-25-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:14:4-15:41
+25-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:14:4-15:41
 26                android:name="android.appwidget.provider"
-26-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:14:15-56
+26-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:14:15-56
 27                android:resource="@xml/widget_22" />
-27-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:15:5-38
+27-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:15:5-38
 28        </receiver>
 29
 30        <activity
-30-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:18:3-28:14
+30-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:18:3-28:14
 31            android:name="net.tapi.handynotes.NewNote"
-31-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:18:13-36
+31-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:18:13-36
 32            android:exported="true"
-32-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:20:13-36
+32-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:20:13-36
 33            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" >
-33-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:19:13-74
+33-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:19:13-74
 34            <intent-filter>
-34-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:21:7-24:23
+34-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:21:7-24:23
 35                <action android:name="android.intent.action.MAIN" />
-35-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:22:11-63
-35-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:22:19-60
+35-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:22:11-63
+35-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:22:19-60
 36
 37                <category android:name="android.intent.category.LAUNCHER" />
-37-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:23:11-71
-37-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:23:21-68
+37-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:23:11-71
+37-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:23:21-68
 38            </intent-filter>
 39            <intent-filter>
-39-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:25:7-27:23
+39-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:25:7-27:23
 40                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
-40-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:26:11-81
-40-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:26:19-78
+40-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:26:11-81
+40-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:26:19-78
 41            </intent-filter>
 42        </activity>
 43        <activity
-43-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:29:3-31:49
+43-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:29:3-32:49
 44            android:name="net.tapi.handynotes.EditNote"
-44-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:29:13-37
+44-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:29:13-37
 45            android:exported="false"
-45-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:31:13-37
-46            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
-46-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:30:13-74
-47
-48        <service
-48-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:32:3-34:47
-49            android:name="net.tapi.handynotes.NoteViewsService"
-49-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:32:12-44
+45-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:32:13-37
+46            android:launchMode="singleTop"
+46-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:31:13-43
+47            android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+47-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:30:13-74
+48        <activity
+48-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:33:3-35:49
+49            android:name="net.tapi.handynotes.WidgetOptionsActivity"
+49-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:33:13-50
 50            android:exported="false"
-50-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:34:12-36
-51            android:permission="android.permission.BIND_REMOTEVIEWS" />
-51-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:33:12-68
+50-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:35:13-37
+51            android:label="Widget Options" />
+51-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:34:13-43
 52
-53        <receiver
-53-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:35:3-40:14
-54            android:name="net.tapi.handynotes.HandyNotes"
-54-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:35:13-39
-55            android:exported="true" >
-55-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:36:4-27
-56            <intent-filter>
-56-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:11:4-13:20
-57                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-57-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:12:5-72
-57-->/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:12:13-69
-58            </intent-filter>
-59        </receiver>
-60    </application>
-61
-62</manifest>
+53        <service
+53-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:36:3-38:47
+54            android:name="net.tapi.handynotes.NoteViewsService"
+54-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:36:12-44
+55            android:exported="false"
+55-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:38:12-36
+56            android:permission="android.permission.BIND_REMOTEVIEWS" />
+56-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:37:12-68
+57
+58        <receiver
+58-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:39:3-44:14
+59            android:name="net.tapi.handynotes.HandyNotes"
+59-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:39:13-39
+60            android:exported="true" >
+60-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:40:4-27
+61            <intent-filter>
+61-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:11:4-13:20
+62                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+62-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:12:5-72
+62-->/Users/youngsage/git/markdown-widget/AndroidManifest.xml:12:13-69
+63            </intent-filter>
+64        </receiver>
+65    </application>
+66
+67</manifest>

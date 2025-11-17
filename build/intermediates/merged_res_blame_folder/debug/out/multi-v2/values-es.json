@@ -4,7 +4,7 @@
             "outputFile": "net.tapi.handynotes-mergeDebugResources-3:/values-es/values-es.xml",
             "map": [
                 {
-                    "source": "/Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/res/values-es/strings.xml",
+                    "source": "/Users/youngsage/git/markdown-widget/res/values-es/strings.xml",
                     "from": {
                         "startLines": "4,3,6,8,7,9,10,11,12,5",
                         "startColumns": "0,4,0,0,0,0,0,0,0,0",

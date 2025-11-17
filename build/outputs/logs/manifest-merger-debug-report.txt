@@ -1,113 +1,123 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:2:1-45:12
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:2:1-49:12
 	package
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:3:7-36
-		INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml
-		INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:3:7-36
+		INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml
+		INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:5:7-32
-		INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml
-		INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:5:7-32
+		INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml
+		INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:2:11-69
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:4:7-30
-		INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml
-		INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:4:7-30
+		INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml
+		INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml
 application
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:6:5-41:19
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:6:5-45:19
 	android:label
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:6:48-80
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:6:48-80
 	android:icon
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:6:18-47
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:6:18-47
 receiver#net.tapi.handynotes.HandyNotes22
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:7:3-16:14
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:7:3-16:14
 	android:label
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:9:4-36
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:9:4-36
 	android:exported
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:10:4-27
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:10:4-27
 	android:name
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:8:4-32
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:8:4-32
 intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:11:4-13:20
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:11:4-13:20
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:12:5-72
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:12:5-72
 	android:name
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:12:13-69
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:12:13-69
 meta-data#android.appwidget.provider
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:14:4-15:41
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:14:4-15:41
 	android:resource
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:15:5-38
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:15:5-38
 	android:name
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:14:15-56
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:14:15-56
 activity#net.tapi.handynotes.NewNote
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:18:3-28:14
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:18:3-28:14
 	android:windowSoftInputMode
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:19:13-74
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:19:13-74
 	android:exported
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:20:13-36
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:20:13-36
 	android:name
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:18:13-36
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:18:13-36
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:21:7-24:23
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:21:7-24:23
 action#android.intent.action.MAIN
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:22:11-63
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:22:11-63
 	android:name
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:22:19-60
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:22:19-60
 category#android.intent.category.LAUNCHER
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:23:11-71
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:23:11-71
 	android:name
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:23:21-68
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:23:21-68
 intent-filter#action:name:android.appwidget.action.APPWIDGET_CONFIGURE
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:25:7-27:23
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:25:7-27:23
 action#android.appwidget.action.APPWIDGET_CONFIGURE
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:26:11-81
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:26:11-81
 	android:name
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:26:19-78
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:26:19-78
 activity#net.tapi.handynotes.EditNote
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:29:3-31:49
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:29:3-32:49
+	android:launchMode
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:31:13-43
 	android:windowSoftInputMode
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:30:13-74
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:30:13-74
 	android:exported
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:31:13-37
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:29:13-37
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:29:13-37
+activity#net.tapi.handynotes.WidgetOptionsActivity
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:33:3-35:49
+	android:label
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:34:13-43
+	android:exported
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:33:13-50
 service#net.tapi.handynotes.NoteViewsService
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:32:3-34:47
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:36:3-38:47
 	android:exported
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:34:12-36
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:38:12-36
 	android:permission
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:33:12-68
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:37:12-68
 	android:name
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:32:12-44
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:36:12-44
 receiver#net.tapi.handynotes.HandyNotes
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:35:3-40:14
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:39:3-44:14
 	android:exported
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:36:4-27
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:40:4-27
 	android:name
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:35:13-39
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:39:13-39
 uses-sdk
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:42:5-74
-INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:42:5-74
-INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:42:5-74
-INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:42:5-74
-INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:42:5-74
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:46:5-74
+INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:46:5-74
+INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:46:5-74
+INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:46:5-74
+INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:46:5-74
 	android:targetSdkVersion
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:42:42-71
-		INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml
-		INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:46:42-71
+		INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml
+		INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:42:15-41
-		INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml
-		INJECTED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:46:15-41
+		INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml
+		INJECTED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml
 supports-screens
-ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:43:5-54
+ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:47:5-54
 	android:xlargeScreens
-		ADDED from /Users/youngsage/Downloads/net.tapi.handynotes_7_src.tar-1.gz/AndroidManifest.xml:43:23-51
+		ADDED from /Users/youngsage/git/markdown-widget/AndroidManifest.xml:47:23-51

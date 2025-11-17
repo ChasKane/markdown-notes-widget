@@ -28,6 +28,10 @@
 		</activity>
 		<activity android:name=".EditNote"
 		          android:windowSoftInputMode="stateAlwaysVisible|adjustResize"
+		          android:launchMode="singleTop"
+		          android:exported="false"></activity>
+		<activity android:name=".WidgetOptionsActivity"
+		          android:label="Widget Options"
 		          android:exported="false"></activity>
 		<service android:name=".NoteViewsService"
 		         android:permission="android.permission.BIND_REMOTEVIEWS"

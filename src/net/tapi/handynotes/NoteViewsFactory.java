@@ -41,11 +41,22 @@ public class NoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
 
     @Override
     public int getCount() {
-        return noteLines.size();
+        // Add 1 for the filler item at the end
+        return noteLines.size() + 1;
     }
 
     @Override
     public RemoteViews getViewAt(int position) {
+        // Last position is the filler item
+        if (position == noteLines.size()) {
+            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.note_list_item_filler);
+            // Set click intent to open EditNote when filler is clicked
+            Intent fillInIntent = new Intent();
+            fillInIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
+            views.setOnClickFillInIntent(R.id.noteListItemText, fillInIntent);
+            return views;
+        }
+        
         if (position < 0 || position >= noteLines.size()) {
             return null;
         }
@@ -74,11 +85,23 @@ public class NoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
 
     @Override
     public int getViewTypeCount() {
-        return 1;
+        return 2; // Regular items and filler item
+    }
+    
+    public int getItemViewType(int position) {
+        // Return 0 for regular items, 1 for filler item
+        if (position == noteLines.size()) {
+            return 1;
+        }
+        return 0;
     }
 
     @Override
     public long getItemId(int position) {
+        // Use negative ID for filler item to distinguish it
+        if (position == noteLines.size()) {
+            return -1;
+        }
         return position;
     }
 

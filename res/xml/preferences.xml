@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Widget settings are now per-widget and configured in WidgetOptionsActivity -->
+    <PreferenceCategory android:title="Information">
+        <android.preference.Preference
+            android:title="Widget Options"
+            android:summary="Configure widget options (title, colors) when adding or editing a widget" />
+    </PreferenceCategory>
+</PreferenceScreen>
+

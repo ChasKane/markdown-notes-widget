@@ -16,6 +16,9 @@ public class NotesDbAdapter {
 	
     public static final String KEY_ROWID = "_id";
     public static final String KEY_FILE_URI = "file_uri";
+    public static final String KEY_SHOW_TITLE = "show_title";
+    public static final String KEY_BG_COLOR = "bg_color";
+    public static final String KEY_PADDING_COLOR = "padding_color";
 
     private static final String TAG = "NotesDbAdapter";
     private DatabaseHelper mDbHelper;
@@ -23,11 +26,14 @@ public class NotesDbAdapter {
     
     private static final String DATABASE_CREATE =
         "create table notes (_id integer primary key, "
-        + "file_uri text not null);";
+        + "file_uri text not null, "
+        + "show_title integer default 0, "
+        + "bg_color text default '#1e1e2e', "
+        + "padding_color text default '#1e1e2e');";
     
     private static final String DATABASE_NAME = "data";
     private static final String DATABASE_TABLE = "notes";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
 	
     private static class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -49,6 +55,11 @@ public class NotesDbAdapter {
                 // Migrate from body-based storage to file URI-based storage
                 db.execSQL("DROP TABLE IF EXISTS notes");
                 onCreate(db);
+            } else if (oldVersion < 3) {
+                // Add per-widget settings columns
+                db.execSQL("ALTER TABLE notes ADD COLUMN show_title integer default 0");
+                db.execSQL("ALTER TABLE notes ADD COLUMN bg_color text default '#1e1e2e'");
+                db.execSQL("ALTER TABLE notes ADD COLUMN padding_color text default '#1e1e2e'");
             }
         }
     }
@@ -71,8 +82,75 @@ public class NotesDbAdapter {
         ContentValues initialValues = new ContentValues();
         initialValues.put(KEY_ROWID, wId);
         initialValues.put(KEY_FILE_URI, fileUri);
+        initialValues.put(KEY_SHOW_TITLE, 0);
+        initialValues.put(KEY_BG_COLOR, "#1e1e2e");
+        initialValues.put(KEY_PADDING_COLOR, "#1e1e2e");
 
         return mDb.insert(DATABASE_TABLE, null, initialValues);
+    }
+    
+    public boolean getShowTitle(int wId) {
+        Cursor mCursor = mDb.query(true, DATABASE_TABLE, new String[] {KEY_SHOW_TITLE}, 
+                KEY_ROWID + "=" + wId, null, null, null, null, null);
+        boolean result = false;
+        if (mCursor != null) {
+            if (mCursor.moveToFirst() && mCursor.getCount() > 0) {
+                result = mCursor.getInt(mCursor.getColumnIndex(KEY_SHOW_TITLE)) != 0;
+            }
+            mCursor.close();
+        }
+        return result;
+    }
+    
+    public String getBgColor(int wId) {
+        Cursor mCursor = mDb.query(true, DATABASE_TABLE, new String[] {KEY_BG_COLOR}, 
+                KEY_ROWID + "=" + wId, null, null, null, null, null);
+        String result = "#1e1e2e";
+        if (mCursor != null) {
+            if (mCursor.moveToFirst() && mCursor.getCount() > 0) {
+                String color = mCursor.getString(mCursor.getColumnIndex(KEY_BG_COLOR));
+                if (color != null && !color.isEmpty()) {
+                    result = color;
+                }
+            }
+            mCursor.close();
+        }
+        return result;
+    }
+    
+    public String getPaddingColor(int wId) {
+        Cursor mCursor = mDb.query(true, DATABASE_TABLE, new String[] {KEY_PADDING_COLOR}, 
+                KEY_ROWID + "=" + wId, null, null, null, null, null);
+        String result = "#1e1e2e";
+        if (mCursor != null) {
+            if (mCursor.moveToFirst() && mCursor.getCount() > 0) {
+                String color = mCursor.getString(mCursor.getColumnIndex(KEY_PADDING_COLOR));
+                if (color != null && !color.isEmpty()) {
+                    result = color;
+                }
+            }
+            mCursor.close();
+        }
+        return result;
+    }
+    
+    public boolean updateWidgetSettings(int wId, boolean showTitle, String bgColor, String paddingColor) {
+        // First check if the widget exists
+        String existingUri = getFileUri(wId);
+        if (existingUri == null || existingUri.isEmpty()) {
+            Log.e(TAG, "updateWidgetSettings: Widget " + wId + " does not exist in database");
+            return false;
+        }
+        
+        ContentValues args = new ContentValues();
+        args.put(KEY_SHOW_TITLE, showTitle ? 1 : 0);
+        args.put(KEY_BG_COLOR, bgColor);
+        args.put(KEY_PADDING_COLOR, paddingColor);
+        int rowsUpdated = mDb.update(DATABASE_TABLE, args, KEY_ROWID + "=" + wId, null);
+        if (rowsUpdated == 0) {
+            Log.e(TAG, "updateWidgetSettings: Failed to update widget " + wId);
+        }
+        return rowsUpdated > 0;
     }
     
     public boolean deleteNote(int wId) {

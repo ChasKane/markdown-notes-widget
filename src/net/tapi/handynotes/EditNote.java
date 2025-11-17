@@ -9,6 +9,8 @@ import android.os.Looper;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -46,21 +48,6 @@ public class EditNote extends Activity {
         editText = (EditText) findViewById(R.id.editNoteText);
         
 	    db = new NotesDbAdapter(this);
-
-        db.open();
-        fileUriString = db.getFileUri(widgetId);
-        
-        if (fileUriString != null && !fileUriString.isEmpty()) {
-            String text = db.readFileContent(fileUriString);
-            lastKnownContent = text;
-            editText.setText(text);
-        } else {
-            Toast.makeText(this, "No file associated with this widget", Toast.LENGTH_SHORT).show();
-            finish();
-            return;
-        }
-        
-        db.close();
         
         // Set up auto-save
         saveHandler = new Handler(Looper.getMainLooper());
@@ -124,7 +111,131 @@ public class EditNote extends Activity {
                 }
             });
         }
+        
+        // Load the note
+        loadNoteForWidget();
   
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Add settings icon
+		MenuItem settingsItem = menu.add(0, 1, 0, "Settings");
+		settingsItem.setIcon(R.drawable.settings_icon);
+		settingsItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		if (item.getItemId() == 1) {
+			Intent optionsIntent = new Intent(this, WidgetOptionsActivity.class);
+			optionsIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, widgetId);
+			startActivityForResult(optionsIntent, 3);
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		if (requestCode == 3 && resultCode == RESULT_OK) {
+			// Widget options were updated, refresh the widget
+			updateWidget();
+		}
+	}
+	
+	@Override
+	protected void onNewIntent(Intent intent) {
+		super.onNewIntent(intent);
+		setIntent(intent); // Important: update the intent so getIntent() returns the new one
+		
+		// Extract widget ID from new intent
+		Bundle extras = intent.getExtras();
+		if (extras != null) {
+			int newWidgetId = extras.getInt(
+					AppWidgetManager.EXTRA_APPWIDGET_ID, 
+					AppWidgetManager.INVALID_APPWIDGET_ID);
+			
+			// Only reload if the widget ID actually changed
+			if (newWidgetId != AppWidgetManager.INVALID_APPWIDGET_ID && 
+				(widgetId == null || widgetId.intValue() != newWidgetId)) {
+				// Save current note before switching (cancel any pending auto-save and save immediately)
+				if (widgetId != null && fileUriString != null && !fileUriString.isEmpty()) {
+					if (saveHandler != null && saveRunnable != null) {
+						saveHandler.removeCallbacks(saveRunnable);
+					}
+					saveNote();
+					updateWidget();
+				}
+				
+				widgetId = newWidgetId;
+				loadNoteForWidget();
+			}
+		}
+	}
+	
+	private void loadNoteForWidget() {
+		if (widgetId == null || widgetId == AppWidgetManager.INVALID_APPWIDGET_ID) {
+			Toast.makeText(this, "Invalid widget ID", Toast.LENGTH_SHORT).show();
+			finish();
+			return;
+		}
+		
+		if (db == null) {
+			db = new NotesDbAdapter(this);
+		}
+		
+		db.open();
+		fileUriString = db.getFileUri(widgetId);
+		
+		if (fileUriString != null && !fileUriString.isEmpty()) {
+			// Set activity title to file name
+			String fileName = getFileName(android.net.Uri.parse(fileUriString));
+			if (fileName != null && !fileName.isEmpty()) {
+				setTitle(fileName);
+			}
+			
+			String text = db.readFileContent(fileUriString);
+			lastKnownContent = text;
+			if (editText != null) {
+				editText.setText(text);
+			}
+		} else {
+			Toast.makeText(this, "No file associated with this widget", Toast.LENGTH_SHORT).show();
+			finish();
+			return;
+		}
+		
+		db.close();
+	}
+	
+	private String getFileName(android.net.Uri uri) {
+		String result = null;
+		if (uri != null && uri.getScheme() != null && uri.getScheme().equals("content")) {
+			android.database.Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+			try {
+				if (cursor != null && cursor.moveToFirst()) {
+					int nameIndex = cursor.getColumnIndex(android.provider.OpenableColumns.DISPLAY_NAME);
+					if (nameIndex >= 0) {
+						result = cursor.getString(nameIndex);
+					}
+				}
+			} finally {
+				if (cursor != null) {
+					cursor.close();
+				}
+			}
+		}
+		if (result == null && uri != null && uri.getPath() != null) {
+			result = uri.getPath();
+			int cut = result.lastIndexOf('/');
+			if (cut != -1) {
+				result = result.substring(cut + 1);
+			}
+		}
+		return result;
 	}
 	
 	private void saveNote() {

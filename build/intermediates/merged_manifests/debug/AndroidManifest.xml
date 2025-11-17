@@ -43,7 +43,12 @@
         <activity
             android:name="net.tapi.handynotes.EditNote"
             android:exported="false"
+            android:launchMode="singleTop"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
+        <activity
+            android:name="net.tapi.handynotes.WidgetOptionsActivity"
+            android:exported="false"
+            android:label="Widget Options" />
 
         <service
             android:name="net.tapi.handynotes.NoteViewsService"

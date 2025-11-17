@@ -11,7 +11,7 @@
     android:paddingBottom="2dp"
     android:singleLine="true"
     android:ellipsize="end"
-    android:background="@color/obsidian_background"
+    android:background="#E0000000"
     android:minHeight="20dp" />
 
 
